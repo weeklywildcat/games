@@ -1,0 +1,877 @@
+/* ==========================================================================
+   Wildcat Word
+   ========================================================================== */
+
+.word-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 2rem;
+}
+
+.word-board {
+  position: relative;
+  display: grid;
+  gap: 0.55rem;
+  perspective: 1400px;
+}
+
+.wrow {
+  display: grid;
+  grid-template-columns: repeat(5, 6rem);
+  gap: 0.55rem;
+}
+
+.wtile {
+  position: relative;
+  height: 6rem;
+}
+
+.wtile-inner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.wtile-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  font-size: 3.1rem;
+  line-height: 1;
+  backface-visibility: hidden;
+}
+
+.wtile-front {
+  border: 0.18rem solid var(--paper-3);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.wtile.has-letter .wtile-front {
+  border-color: var(--ink);
+}
+
+.wtile.is-active .wtile-front {
+  border-color: var(--ink-3);
+  box-shadow: inset 0 -0.3rem 0 var(--paper-3);
+}
+
+.wtile-back {
+  transform: rotateX(180deg);
+  color: white;
+  border: 0.18rem solid transparent;
+}
+
+.wtile-back.no-flip {
+  transform: none;
+  z-index: 1;
+}
+
+.wtile-back.is-correct {
+  background: var(--word);
+}
+
+/* Present tiles get a notched corner too, so the cue isn't color alone. */
+.wtile-back.is-present {
+  background: var(--word-present);
+  background-image: linear-gradient(225deg, var(--ink) 0 0.9rem, transparent 0.9rem);
+}
+
+.wtile-back.is-absent {
+  background: var(--word-absent);
+}
+
+.wtile-back.is-correct::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.45rem;
+  width: 1.4rem;
+  height: 0.28rem;
+  margin-left: -0.7rem;
+  border-radius: 99px;
+  background: rgb(255 255 255 / 0.85);
+}
+
+.wkeys {
+  display: grid;
+  gap: 0.55rem;
+  width: min(78rem, 100%);
+}
+
+.wkeys-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.wkey {
+  flex: 0 1 6.8rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  border: 0.16rem solid var(--ink);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  box-shadow: 0 0.22rem 0 var(--ink);
+  font-weight: 800;
+  font-size: 1.8rem;
+  font-variation-settings: "wdth" 115;
+  transition:
+    background-color var(--t-base),
+    color var(--t-base);
+}
+
+.wkey:disabled {
+  opacity: 0.7;
+}
+
+.wkey svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.wkey-wide {
+  flex-basis: 10rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.wkey.is-correct {
+  background: var(--word);
+  color: white;
+}
+
+.wkey.is-present {
+  background: var(--word-present);
+  color: white;
+  background-image: linear-gradient(225deg, var(--ink) 0 0.6rem, transparent 0.6rem);
+}
+
+.wkey.is-absent {
+  background: var(--word-absent);
+  color: rgb(255 255 255 / 0.8);
+  border-color: var(--word-absent);
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   Connections
+   ========================================================================== */
+
+.conn-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  gap: 1.1rem;
+  padding: 1.4rem 2rem 1.6rem;
+}
+
+.conn-prompt {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--ink-2);
+}
+
+.conn-board {
+  display: grid;
+  align-self: center;
+  align-content: start;
+  gap: 0.8rem;
+  width: min(84rem, 100%);
+}
+
+.conn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.ctile {
+  display: grid;
+  place-items: center;
+  height: 9.6rem;
+  padding: 0 0.6rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  color: var(--ink);
+  font-weight: 850;
+  font-size: 2.15rem;
+  letter-spacing: 0.02em;
+  font-variation-settings: "wdth" 112;
+  text-align: center;
+  line-height: 1.05;
+  transition:
+    background-color var(--t-quick) var(--ease-out),
+    color var(--t-quick) var(--ease-out);
+}
+
+.ctile-label {
+  display: block;
+}
+
+.ctile.is-long {
+  font-size: 1.85rem;
+}
+.ctile.is-longer {
+  font-size: 1.55rem;
+  font-variation-settings: "wdth" 95;
+}
+.ctile.is-longest {
+  font-size: 1.3rem;
+  font-variation-settings: "wdth" 85;
+}
+
+.ctile.is-selected {
+  background: var(--ink-2);
+  color: white;
+}
+
+.ctile:disabled:not(.is-selected) {
+  cursor: default;
+}
+
+.csolved {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 0.35rem;
+  height: 9.6rem;
+  border-radius: var(--radius);
+  background: var(--g);
+  color: var(--ink);
+  position: relative;
+}
+
+.csolved-cat {
+  font-size: 1.9rem;
+}
+
+.csolved-members {
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.csolved-level {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  font-size: 0.7rem;
+  opacity: 0.65;
+}
+
+.conn-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.conn-toast {
+  top: auto;
+  bottom: 8.4rem;
+}
+
+/* ==========================================================================
+   Trivia Blitz
+   ========================================================================== */
+
+.trivia-status {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.trivia-progress {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.trivia-progress .seg {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  border: 0.14rem solid var(--ink);
+  background: var(--card);
+  transition: background-color var(--t-base);
+}
+
+.trivia-progress .seg.is-now {
+  background: var(--paper-3);
+  animation: now 1.4s ease-in-out infinite;
+}
+
+.trivia-progress .seg.is-right {
+  background: var(--good);
+}
+
+.trivia-progress .seg.is-wrong {
+  background: var(--bad);
+}
+
+@keyframes now {
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+.untimed-chip {
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: var(--paper-2);
+  font-size: 0.85rem;
+}
+
+.trivia-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.8rem 2.4rem;
+}
+
+.trivia-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 1.4rem;
+  width: min(100rem, 100%);
+  height: 100%;
+}
+
+.trivia-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trivia-cat {
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: var(--c);
+  color: white;
+}
+
+.trivia-prompt {
+  margin: 0;
+  font-size: 3.4rem;
+  font-weight: 780;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.trivia-answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  min-height: 0;
+}
+
+.tanswer {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  min-height: 7.4rem;
+  padding: 1rem 1.6rem;
+  border: 0.22rem solid var(--ink);
+  border-radius: 1.2rem;
+  background: var(--card);
+  box-shadow: 0 0.4rem 0 var(--ink);
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  transition:
+    background-color var(--t-quick),
+    color var(--t-quick),
+    opacity var(--t-base),
+    box-shadow var(--t-instant);
+}
+
+.tanswer:active:not(:disabled) {
+  box-shadow: 0 0.1rem 0 var(--ink);
+}
+
+.tanswer-letter {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 0.7rem;
+  background: var(--c);
+  color: white;
+  font-size: 1.8rem;
+}
+
+.tanswer-letter svg {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 3;
+}
+
+.tanswer.is-right {
+  background: var(--good);
+  color: white;
+}
+
+.tanswer.is-right .tanswer-letter {
+  background: white;
+  color: var(--good);
+}
+
+.tanswer.is-wrong {
+  background: var(--bad);
+  color: white;
+}
+
+.tanswer.is-wrong .tanswer-letter {
+  background: white;
+  color: var(--bad);
+}
+
+.tanswer.is-dim {
+  opacity: 0.4;
+  box-shadow: none;
+}
+
+.trivia-reveal {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 1.2rem;
+  background: var(--card);
+  border: 0.18rem solid var(--ink);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  overflow: hidden;
+}
+
+.trivia-reveal strong {
+  font-size: 2.2rem;
+}
+
+.trivia-reveal.is-right strong {
+  color: var(--good);
+}
+
+.trivia-reveal.is-wrong strong {
+  color: var(--bad);
+}
+
+.auto-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.35rem;
+  width: 100%;
+  background: var(--c);
+  transform-origin: left;
+  animation: auto-advance linear forwards;
+}
+
+@keyframes auto-advance {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+/* ==========================================================================
+   Mini Match
+   ========================================================================== */
+
+.match-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem 1.8rem;
+}
+
+.match-theme {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin: 0;
+}
+
+.match-theme .display {
+  font-size: 2rem;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1.1rem;
+  height: 100%;
+  aspect-ratio: 4 / 3.15;
+  max-width: 100%;
+  perspective: 1600px;
+}
+
+.mcard {
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  min-height: 0;
+}
+
+.mcard-inner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.mcard-back,
+.mcard-front {
+  position: absolute;
+  inset: 0;
+  border: 0.22rem solid var(--ink);
+  border-radius: 1.2rem;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 0 var(--ink);
+}
+
+.mcard-back {
+  display: grid;
+  place-items: center;
+  background-color: var(--card);
+}
+
+.mcard-back-mark {
+  display: grid;
+  place-items: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 2.4rem;
+}
+
+.back-dots {
+  background-image: radial-gradient(circle, var(--match) 22%, transparent 23%);
+  background-size: 2.2rem 2.2rem;
+}
+.back-stripes {
+  background-image: repeating-linear-gradient(45deg, var(--match) 0 0.8rem, transparent 0.8rem 1.8rem);
+}
+.back-grid {
+  background-image: linear-gradient(var(--match) 0.25rem, transparent 0.25rem), linear-gradient(90deg, var(--match) 0.25rem, transparent 0.25rem);
+  background-size: 2rem 2rem;
+}
+.back-waves {
+  background-image: radial-gradient(circle at 50% 100%, transparent 0.9rem, var(--match) 1rem 1.3rem, transparent 1.35rem);
+  background-size: 2.6rem 1.4rem;
+}
+.back-checks {
+  background-image: conic-gradient(var(--match) 25%, transparent 0 50%, var(--match) 0 75%, transparent 0);
+  background-size: 2.4rem 2.4rem;
+}
+
+.mcard-front {
+  transform: rotateY(180deg);
+  background: var(--card);
+}
+
+.mcard-front.flat-up {
+  transform: none;
+  z-index: 1;
+}
+
+.mcard-front.flat-down {
+  transform: none;
+  opacity: 0;
+}
+
+.mcard-face-inner {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem 0.6rem 0.8rem;
+  background: var(--tint);
+  color: white;
+}
+
+.mcard-icon {
+  width: 52%;
+  height: auto;
+  max-height: 70%;
+  filter: drop-shadow(0 0.25rem 0 rgb(0 0 0 / 0.18));
+}
+
+.mcard-img {
+  width: 80%;
+  height: 72%;
+  object-fit: contain;
+}
+
+.mcard-label {
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-variation-settings: "wdth" 110;
+}
+
+.mcard-check {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--good);
+  border: 0.16rem solid var(--ink);
+}
+
+.mcard-check svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  stroke-width: 3.5;
+}
+
+.mcard.is-matched .mcard-front {
+  box-shadow:
+    0 0 0 0.4rem var(--word-present),
+    0 0.4rem 0 var(--ink);
+}
+
+.mcard.is-missed .mcard-front {
+  box-shadow:
+    0 0 0 0.4rem var(--bad),
+    0 0.4rem 0 var(--ink);
+}
+
+.match-revealed {
+  position: absolute;
+  bottom: 2rem;
+}
+
+/* ==========================================================================
+   Wildcat Rush
+   ========================================================================== */
+
+.rush-layout {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.rush-start {
+  display: grid;
+  justify-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  max-width: 60rem;
+}
+
+.rush-start h2 {
+  margin: 0;
+  font-size: 9rem;
+  color: var(--c);
+  -webkit-text-stroke: 0.04em var(--ink);
+  paint-order: stroke fill;
+}
+
+.rush-start p {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.35;
+}
+
+.rush-count {
+  position: absolute;
+  font-size: 22rem;
+  color: var(--c);
+  -webkit-text-stroke: 0.04em var(--ink);
+  paint-order: stroke fill;
+}
+
+.rush-card {
+  display: grid;
+  justify-items: center;
+  gap: 1.6rem;
+  width: min(92rem, 100%);
+  padding: 2.4rem 2.8rem;
+  border: 0.22rem solid var(--ink);
+  border-radius: 1.8rem;
+  background: var(--card);
+  box-shadow: 0 0.6rem 0 var(--ink);
+}
+
+.rush-kind {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: var(--c);
+  color: white;
+}
+
+.rush-prompt {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 780;
+  line-height: 1.15;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.rush-cat {
+  font-size: 3.6rem;
+}
+
+.rush-clues {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.rush-clue {
+  padding: 0.9rem 1.4rem;
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  font-weight: 850;
+  font-size: 1.9rem;
+}
+
+.rush-clue.is-blank {
+  background: transparent;
+  border: 0.2rem dashed var(--ink-3);
+  color: var(--ink-3);
+}
+
+.rush-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+.rush-choices.is-big {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.rchoice {
+  min-height: 6.4rem;
+  padding: 0.8rem 1.2rem;
+  border: 0.22rem solid var(--ink);
+  border-radius: 1.1rem;
+  background: var(--card);
+  box-shadow: 0 0.35rem 0 var(--ink);
+  font-size: 2rem;
+  font-weight: 750;
+  transition:
+    background-color var(--t-quick),
+    opacity var(--t-quick);
+}
+
+.rush-choices.is-big .rchoice {
+  min-height: 8rem;
+  font-size: 4rem;
+  font-weight: 900;
+  font-variation-settings: "wdth" 125;
+}
+
+.rchoice.is-right {
+  background: var(--good);
+  color: white;
+}
+
+.rchoice.is-wrong {
+  background: var(--bad);
+  color: white;
+}
+
+.rchoice.is-dim {
+  opacity: 0.4;
+}
+
+.rush-pattern {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.rush-ptile {
+  display: grid;
+  place-items: center;
+  width: 7rem;
+  height: 7rem;
+  border: 0.2rem solid var(--ink);
+  border-radius: var(--radius);
+  font-size: 3.6rem;
+  background: var(--card);
+}
+
+.rush-ptile.is-blank {
+  border-style: dashed;
+  background: var(--paper-2);
+  color: var(--good);
+}
+
+.rush-pairs {
+  display: grid;
+  grid-template-columns: repeat(4, 9rem);
+  gap: 1rem;
+}
+
+.rpair {
+  display: grid;
+  place-items: center;
+  height: 9rem;
+  border: 0.22rem solid var(--ink);
+  border-radius: 1.1rem;
+  background: var(--tint);
+  color: white;
+  box-shadow: 0 0.35rem 0 var(--ink);
+}
+
+.rpair svg {
+  width: 4.6rem;
+  height: 4.6rem;
+}
+
+.rpair.is-picked {
+  outline: 0.4rem solid var(--ink);
+  outline-offset: 0.2rem;
+}
+
+.rpair.is-right {
+  box-shadow:
+    0 0 0 0.45rem var(--good),
+    0 0.35rem 0 var(--ink);
+}
+
+.rpair.is-dim {
+  opacity: 0.35;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "wildcat-games",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Wildcat Games: a touchscreen arcade from The Weekly Wildcat",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5",
+    "wordlist-english": "^1.2.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:server": "tsx watch --clear-screen=false apps/server/src/index.ts",
+    "dev:web": "vite --config apps/web/vite.config.ts",
+    "build": "npm run build:web && npm run build:server",
+    "build:web": "vite build --config apps/web/vite.config.ts",
+    "build:server": "node scripts/build-server.mjs",
+    "start": "NODE_ENV=production node apps/server/dist/index.mjs",
+    "typecheck": "tsc -p packages/shared --noEmit && tsc -p apps/server --noEmit && tsc -p apps/web --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "content:dictionary": "tsx scripts/build-dictionary.ts",
+    "admin": "tsx apps/server/src/cli.ts"
+  }
+}
