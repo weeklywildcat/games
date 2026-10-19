@@ -1,0 +1,272 @@
+[
+  {"id":"conn-001","difficulty":2,"groups":[
+    {"level":1,"category":"Shades of red","members":["CRIMSON","SCARLET","RUBY","CHERRY"],"explanation":"All reds. Cherry is also a tree, but the trees already have four."},
+    {"level":2,"category":"Trees","members":["OAK","ASPEN","BIRCH","WILLOW"],"explanation":"Common North American trees."},
+    {"level":3,"category":"Things with keys","members":["PIANO","MAP","LOCK","FLORIDA"],"explanation":"Piano keys, a map key, a lock's key, and the Florida Keys."},
+    {"level":4,"category":"Hidden body parts","members":["CHINA","SHINY","PEARL","SHIPS"],"explanation":"CHINa, SHINy, pEARl, sHIPs."}
+  ]},
+  {"id":"conn-002","difficulty":2,"groups":[
+    {"level":1,"category":"Greek letters","members":["ALPHA","DELTA","SIGMA","OMEGA"],"explanation":"Letters of the Greek alphabet."},
+    {"level":2,"category":"Planets","members":["MARS","VENUS","SATURN","MERCURY"],"explanation":"Mercury is also an element, but the planets need it."},
+    {"level":3,"category":"Chemical elements","members":["IRON","NEON","CARBON","GOLD"],"explanation":"Fe, Ne, C, and Au."},
+    {"level":4,"category":"___fish","members":["SWORD","CAT","STAR","JELLY"],"explanation":"Swordfish, catfish, starfish, jellyfish."}
+  ]},
+  {"id":"conn-003","difficulty":1,"groups":[
+    {"level":1,"category":"Breakfast foods","members":["PANCAKE","WAFFLE","BAGEL","OMELET"],"explanation":"Morning staples."},
+    {"level":2,"category":"Card games","members":["POKER","RUMMY","SPADES","HEARTS"],"explanation":"Games played with a standard deck."},
+    {"level":3,"category":"Basketball moves","members":["DUNK","LAYUP","PIVOT","CROSSOVER"],"explanation":"Things you do on the court."},
+    {"level":4,"category":"___cake","members":["CUP","CHEESE","SPONGE","SHORT"],"explanation":"Cupcake, cheesecake, sponge cake, shortcake."}
+  ]},
+  {"id":"conn-004","difficulty":2,"tags":["journalism"],"groups":[
+    {"level":1,"category":"Parts of a news story","members":["HEADLINE","BYLINE","LEDE","CAPTION"],"explanation":"What every story on the page has."},
+    {"level":2,"category":"In a reporter's bag","members":["NOTEBOOK","PEN","RECORDER","LANYARD"],"explanation":"Tools of the trade."},
+    {"level":3,"category":"___room","members":["DARK","CLASS","BALL","MUSH"],"explanation":"Darkroom, classroom, ballroom, mushroom. Newsroom works too, but news is needed elsewhere."},
+    {"level":4,"category":"Things you break","members":["NEWS","ICE","RECORD","SILENCE"],"explanation":"Break the news, the ice, a record, the silence."}
+  ]},
+  {"id":"conn-005","difficulty":3,"groups":[
+    {"level":1,"category":"Pets","members":["HAMSTER","PARROT","GOLDFISH","KITTEN"],"explanation":"Animals people keep at home."},
+    {"level":2,"category":"Salad ingredients","members":["LETTUCE","CUCUMBER","CROUTON","TOMATO"],"explanation":"What goes in the bowl."},
+    {"level":3,"category":"Hidden animals","members":["SCATTER","CARPET","DOGMA","ANTIQUE"],"explanation":"sCATter, CARPet, DOGma, ANTique."},
+    {"level":4,"category":"Starts with a vehicle","members":["VANILLA","BUSTLE","CABBAGE","TRAINER"],"explanation":"VANilla, BUStle, CABbage, TRAINer. Carpet starts with CAR, but it is needed for its carp."}
+  ]},
+  {"id":"conn-006","difficulty":1,"tags":["school"],"groups":[
+    {"level":1,"category":"School subjects","members":["BIOLOGY","ALGEBRA","HISTORY","CHEMISTRY"],"explanation":"Classes on a high school schedule."},
+    {"level":2,"category":"In a backpack","members":["BINDER","CALCULATOR","CHARGER","PLANNER"],"explanation":"Things students carry."},
+    {"level":3,"category":"Places in a school","members":["GYM","LIBRARY","CAFETERIA","AUDITORIUM"],"explanation":"Rooms you'll find on campus."},
+    {"level":4,"category":"Pop ___","members":["QUIZ","CORN","STAR","ART"],"explanation":"Pop quiz, popcorn, pop star, pop art. Art is a subject too."}
+  ]},
+  {"id":"conn-007","difficulty":2,"tags":["sports"],"groups":[
+    {"level":1,"category":"At the bowling alley","members":["PINS","LANE","GUTTER","STRIKE"],"explanation":"Strike is also baseball, but bowling needs it."},
+    {"level":2,"category":"Baseball terms","members":["BUNT","DUGOUT","INNING","SHORTSTOP"],"explanation":"Words from the diamond."},
+    {"level":3,"category":"Winter Olympic sports","members":["CURLING","LUGE","BIATHLON","SKELETON"],"explanation":"All contested at the Winter Games."},
+    {"level":4,"category":"Spare ___","members":["TIRE","CHANGE","ROOM","TIME"],"explanation":"Spare tire, spare change, spare room, spare time."}
+  ]},
+  {"id":"conn-008","difficulty":2,"tags":["geography"],"groups":[
+    {"level":1,"category":"South American countries","members":["PERU","CHILE","BRAZIL","ECUADOR"],"explanation":"Nations of South America."},
+    {"level":2,"category":"U.S. state capitals","members":["AUSTIN","DENVER","BOISE","SALEM"],"explanation":"Texas, Colorado, Idaho, and Oregon."},
+    {"level":3,"category":"Hot peppers","members":["JALAPENO","HABANERO","POBLANO","CAYENNE"],"explanation":"Cayenne is also the capital of French Guiana."},
+    {"level":4,"category":"Words that are also birds","members":["TURKEY","SWALLOW","CRANE","JAY"],"explanation":"A country, a verb, a machine, and a letter that are also birds."}
+  ]},
+  {"id":"conn-009","difficulty":2,"tags":["music"],"groups":[
+    {"level":1,"category":"Marching band instruments","members":["TUBA","TRUMPET","SNARE","CLARINET"],"explanation":"Heard at halftime."},
+    {"level":2,"category":"Music genres","members":["JAZZ","BLUES","COUNTRY","REGGAE"],"explanation":"Styles of music."},
+    {"level":3,"category":"___note","members":["FOOT","BANK","KEY","STICKY"],"explanation":"Footnote, banknote, keynote, sticky note."},
+    {"level":4,"category":"Things that can be sharp","members":["CHEDDAR","KNIFE","PENCIL","DRESSER"],"explanation":"A sharp cheddar, knife, pencil, and dresser."}
+  ]},
+  {"id":"conn-010","difficulty":2,"tags":["food"],"groups":[
+    {"level":1,"category":"Pasta shapes","members":["PENNE","RIGATONI","FUSILLI","ORZO"],"explanation":"Italian noodles."},
+    {"level":2,"category":"Pizza toppings","members":["PEPPERONI","MUSHROOM","SAUSAGE","OLIVE"],"explanation":"Olive oil exists, but the pizza needs its olives."},
+    {"level":3,"category":"Italian cities","members":["ROME","MILAN","NAPLES","TURIN"],"explanation":"Cities in Italy."},
+    {"level":4,"category":"___ oil","members":["MOTOR","CASTOR","CRUDE","BABY"],"explanation":"Motor oil, castor oil, crude oil, baby oil."}
+  ]},
+  {"id":"conn-011","difficulty":2,"tags":["science"],"groups":[
+    {"level":1,"category":"States of matter","members":["SOLID","LIQUID","GAS","PLASMA"],"explanation":"The four classic states."},
+    {"level":2,"category":"Parts of a cell","members":["NUCLEUS","MEMBRANE","RIBOSOME","CYTOPLASM"],"explanation":"Cell biology basics."},
+    {"level":3,"category":"Branches of science","members":["ZOOLOGY","GEOLOGY","BOTANY","ASTRONOMY"],"explanation":"Animals, rocks, plants, and space."},
+    {"level":4,"category":"Units named after scientists","members":["WATT","VOLT","NEWTON","KELVIN"],"explanation":"James Watt, Alessandro Volta, Isaac Newton, Lord Kelvin."}
+  ]},
+  {"id":"conn-012","difficulty":2,"groups":[
+    {"level":1,"category":"Board games","members":["CHESS","CHECKERS","SCRABBLE","CLUE"],"explanation":"Classic tabletop games."},
+    {"level":2,"category":"Chess pieces","members":["KING","QUEEN","BISHOP","KNIGHT"],"explanation":"Pieces on the board."},
+    {"level":3,"category":"Card suits","members":["CLUBS","DIAMONDS","HEARTS","SPADES"],"explanation":"The four suits."},
+    {"level":4,"category":"___board","members":["SKATE","SURF","KEY","DASH"],"explanation":"Skateboard, surfboard, keyboard, dashboard. Chessboard works too, but chess is a board game here."}
+  ]},
+  {"id":"conn-013","difficulty":2,"tags":["wordplay"],"groups":[
+    {"level":1,"category":"Fruits","members":["PEAR","PLUM","KIWI","MANGO"],"explanation":"Things in a fruit bowl."},
+    {"level":2,"category":"On your face","members":["NOSE","BROW","CHEEK","CHIN"],"explanation":"Facial features."},
+    {"level":3,"category":"Sound like letters","members":["SEA","TEA","BEE","EYE"],"explanation":"C, T, B, and I."},
+    {"level":4,"category":"Sound like numbers","members":["ATE","WON","FOR","TOO"],"explanation":"Eight, one, four, two."}
+  ]},
+  {"id":"conn-014","difficulty":2,"tags":["science"],"groups":[
+    {"level":1,"category":"Wet or hazy weather","members":["DRIZZLE","SLEET","MIST","FOG"],"explanation":"Forecast words."},
+    {"level":2,"category":"Cloud types","members":["CIRRUS","CUMULUS","STRATUS","NIMBUS"],"explanation":"The basic cloud families."},
+    {"level":3,"category":"___storm (one word)","members":["BRAIN","FIRE","BARN","SNOW"],"explanation":"Brainstorm, firestorm, barnstorm, snowstorm."},
+    {"level":4,"category":"Rain___","members":["BOW","COAT","DROP","FOREST"],"explanation":"Rainbow, raincoat, raindrop, rainforest."}
+  ]},
+  {"id":"conn-015","difficulty":2,"groups":[
+    {"level":1,"category":"Baby animals","members":["CUB","CALF","FOAL","PUP"],"explanation":"Young bear, cow, horse, and dog."},
+    {"level":2,"category":"Animal groups","members":["PRIDE","PACK","FLOCK","SCHOOL"],"explanation":"Lions, wolves, birds, fish."},
+    {"level":3,"category":"Dog tricks","members":["FETCH","SIT","BARK","ROLL"],"explanation":"Good dog."},
+    {"level":4,"category":"To tease","members":["RIB","NEEDLE","RIDE","KID"],"explanation":"Kid is also a baby goat, but the babies already have four."}
+  ]},
+  {"id":"conn-016","difficulty":1,"tags":["history"],"groups":[
+    {"level":1,"category":"Original thirteen colonies","members":["GEORGIA","VIRGINIA","DELAWARE","MARYLAND"],"explanation":"Four of the thirteen."},
+    {"level":2,"category":"U.S. coins","members":["PENNY","NICKEL","DIME","QUARTER"],"explanation":"Pocket change."},
+    {"level":3,"category":"On Mount Rushmore","members":["WASHINGTON","JEFFERSON","ROOSEVELT","LINCOLN"],"explanation":"The four presidents carved in South Dakota."},
+    {"level":4,"category":"___ Street","members":["WALL","MAIN","SESAME","EASY"],"explanation":"Wall Street, Main Street, Sesame Street, Easy Street."}
+  ]},
+  {"id":"conn-017","difficulty":3,"tags":["wordplay"],"groups":[
+    {"level":1,"category":"Kitchen tools","members":["WHISK","LADLE","SPATULA","TONGS"],"explanation":"Utensils."},
+    {"level":2,"category":"Desserts","members":["PIE","CAKE","TART","FUDGE"],"explanation":"Sweet treats."},
+    {"level":3,"category":"Anagrams of each other","members":["POTS","TOPS","SPOT","POST"],"explanation":"Same four letters."},
+    {"level":4,"category":"Add S to the front","members":["MILE","NOW","CAR","HOP"],"explanation":"Smile, snow, scar, shop. Tart becomes start, but dessert needs it."}
+  ]},
+  {"id":"conn-018","difficulty":2,"tags":["pop-culture"],"groups":[
+    {"level":1,"category":"Hogwarts houses","members":["GRYFFINDOR","HUFFLEPUFF","RAVENCLAW","SLYTHERIN"],"explanation":"From Harry Potter."},
+    {"level":2,"category":"The Wizard of Oz","members":["SCARECROW","TIN MAN","TOTO","DOROTHY"],"explanation":"Characters on the yellow brick road."},
+    {"level":3,"category":"Seven Dwarfs","members":["DOC","GRUMPY","SNEEZY","DOPEY"],"explanation":"Four of Snow White's seven."},
+    {"level":4,"category":"Famous lions","members":["ASLAN","SIMBA","MUFASA","NALA"],"explanation":"Narnia and The Lion King."}
+  ]},
+  {"id":"conn-019","difficulty":2,"groups":[
+    {"level":1,"category":"Furniture","members":["SOFA","DRESSER","BOOKCASE","RECLINER"],"explanation":"An ottoman is furniture too, but it is needed elsewhere."},
+    {"level":2,"category":"Rooms in a house","members":["KITCHEN","BEDROOM","PANTRY","ATTIC"],"explanation":"Around the house."},
+    {"level":3,"category":"Historic empires","members":["OTTOMAN","ROMAN","MONGOL","PERSIAN"],"explanation":"Great empires of history."},
+    {"level":4,"category":"Cat breeds","members":["SIAMESE","SPHYNX","BENGAL","MANX"],"explanation":"Persian is a breed too, but the empires need it."}
+  ]},
+  {"id":"conn-020","difficulty":1,"tags":["sports","school"],"groups":[
+    {"level":1,"category":"Big cats","members":["LION","TIGER","LEOPARD","CHEETAH"],"explanation":"The large wild cats."},
+    {"level":2,"category":"Soccer terms","members":["GOAL","CORNER","PENALTY","OFFSIDE"],"explanation":"On the pitch."},
+    {"level":3,"category":"Golf scores","members":["BIRDIE","EAGLE","BOGEY","PAR"],"explanation":"Scores relative to par."},
+    {"level":4,"category":"Wild___","members":["CARD","FIRE","LIFE","CAT"],"explanation":"Wildcard, wildfire, wildlife, and of course, Wildcat."}
+  ]},
+  {"id":"conn-021","difficulty":2,"tags":["vocabulary"],"groups":[
+    {"level":1,"category":"Happy","members":["GLAD","CHEERFUL","JOYFUL","MERRY"],"explanation":"Synonyms for happy."},
+    {"level":2,"category":"Small","members":["TINY","PETITE","MINI","WEE"],"explanation":"Synonyms for small."},
+    {"level":3,"category":"Big","members":["HUGE","GIANT","VAST","JUMBO"],"explanation":"Synonyms for big."},
+    {"level":4,"category":"Hidden ANT","members":["PANTRY","ELEPHANT","WANTED","PLANT"],"explanation":"pANTry, elephANT, wANTed, plANT. Giant hides one too, but big needs it."}
+  ]},
+  {"id":"conn-022","difficulty":2,"tags":["science"],"groups":[
+    {"level":1,"category":"In the night sky","members":["MOON","COMET","STAR","METEOR"],"explanation":"Look up."},
+    {"level":2,"category":"NASA programs","members":["APOLLO","GEMINI","ARTEMIS","MERCURY"],"explanation":"Human spaceflight programs."},
+    {"level":3,"category":"Zodiac signs","members":["LEO","LIBRA","VIRGO","TAURUS"],"explanation":"Gemini is a sign too, but NASA needs it."},
+    {"level":4,"category":"Greek gods","members":["ZEUS","ATHENA","HERMES","POSEIDON"],"explanation":"Apollo and Artemis are Greek gods too, but NASA needs them."}
+  ]},
+  {"id":"conn-023","difficulty":2,"tags":["journalism"],"groups":[
+    {"level":1,"category":"Newspaper sections","members":["SPORTS","OPINION","FEATURES","NEWS"],"explanation":"Where stories live in the paper."},
+    {"level":2,"category":"Common newspaper names","members":["TIMES","POST","TRIBUNE","HERALD"],"explanation":"The second word of many mastheads."},
+    {"level":3,"category":"Punctuation","members":["COMMA","COLON","HYPHEN","PERIOD"],"explanation":"Marks on the page."},
+    {"level":4,"category":"___line in the newsroom","members":["DEAD","HEAD","BY","DATE"],"explanation":"Deadline, headline, byline, dateline."}
+  ]},
+  {"id":"conn-024","difficulty":2,"groups":[
+    {"level":1,"category":"Ocean animals","members":["WHALE","DOLPHIN","OCTOPUS","SEAL"],"explanation":"Sea life."},
+    {"level":2,"category":"In a wallet","members":["CASH","RECEIPT","PHOTO","LICENSE"],"explanation":"Things people carry in a wallet."},
+    {"level":3,"category":"Rhymes with mail","members":["SNAIL","PAIL","TRAIL","SCALE"],"explanation":"Whale rhymes too, but the ocean needs it."},
+    {"level":4,"category":"___ tank","members":["THINK","GAS","TOP","SHARK"],"explanation":"Think tank, gas tank, tank top, Shark Tank."}
+  ]},
+  {"id":"conn-025","difficulty":3,"groups":[
+    {"level":1,"category":"Shades of blue","members":["NAVY","TEAL","COBALT","AZURE"],"explanation":"Blues."},
+    {"level":2,"category":"Gemstones","members":["EMERALD","SAPPHIRE","TOPAZ","OPAL"],"explanation":"Precious and semiprecious stones."},
+    {"level":3,"category":"U.S. military branches","members":["ARMY","MARINES","AIR FORCE","COAST GUARD"],"explanation":"The Navy is one too, but the blues need it."},
+    {"level":4,"category":"Hidden colors","members":["CREDIT","STANDARD","STEALTH","ROSEMARY"],"explanation":"cREDit, sTANdard, sTEALth, ROSEmary."}
+  ]},
+  {"id":"conn-026","difficulty":2,"tags":["food"],"groups":[
+    {"level":1,"category":"Cooking methods","members":["BAKE","FRY","ROAST","BOIL"],"explanation":"Ways to cook."},
+    {"level":2,"category":"Breads","members":["BAGUETTE","RYE","SOURDOUGH","NAAN"],"explanation":"Loaves from around the world."},
+    {"level":3,"category":"___boat","members":["STEAM","SAIL","ROW","TUG"],"explanation":"Steamboat, sailboat, rowboat, tugboat."},
+    {"level":4,"category":"Has a crust","members":["PIE","EARTH","PIZZA","QUICHE"],"explanation":"Earth's crust counts."}
+  ]},
+  {"id":"conn-027","difficulty":3,"groups":[
+    {"level":1,"category":"Parts of the arm","members":["ELBOW","WRIST","FOREARM","SHOULDER"],"explanation":"Anatomy."},
+    {"level":2,"category":"Things with teeth","members":["COMB","SAW","ZIPPER","GEAR"],"explanation":"Toothed objects."},
+    {"level":3,"category":"Things with eyes","members":["POTATO","NEEDLE","HURRICANE","PEACOCK"],"explanation":"Potato eyes, a needle's eye, the eye of a storm, eyespots on feathers."},
+    {"level":4,"category":"Things with necks","members":["GUITAR","BOTTLE","SHIRT","VIOLIN"],"explanation":"Necks that aren't on people."}
+  ]},
+  {"id":"conn-028","difficulty":1,"tags":["seasonal"],"groups":[
+    {"level":1,"category":"Halloween costumes","members":["GHOST","WITCH","VAMPIRE","MUMMY"],"explanation":"Classic October 31 looks."},
+    {"level":2,"category":"Sweets","members":["TAFFY","LOLLIPOP","GUMDROP","TOFFEE"],"explanation":"Treats for trick-or-treaters."},
+    {"level":3,"category":"Spooky sounds","members":["CREAK","HOWL","MOAN","SHRIEK"],"explanation":"Heard in a haunted house."},
+    {"level":4,"category":"___corn","members":["POP","PEPPER","UNI","CANDY"],"explanation":"Popcorn, peppercorn, unicorn, candy corn."}
+  ]},
+  {"id":"conn-029","difficulty":2,"tags":["seasonal"],"groups":[
+    {"level":1,"category":"Signs of fall","members":["LEAVES","PUMPKIN","ACORN","SCARECROW"],"explanation":"Autumn things."},
+    {"level":2,"category":"Apple varieties","members":["GALA","FUJI","HONEYCRISP","MCINTOSH"],"explanation":"Fuji is also a mountain, but the mountains have four."},
+    {"level":3,"category":"Mountains","members":["EVEREST","DENALI","RAINIER","KILIMANJARO"],"explanation":"Famous peaks."},
+    {"level":4,"category":"___fall","members":["WATER","NIGHT","WIND","LAND"],"explanation":"Waterfall, nightfall, windfall, landfall."}
+  ]},
+  {"id":"conn-030","difficulty":2,"groups":[
+    {"level":1,"category":"Parts of a ship","members":["DECK","HULL","MAST","BOW"],"explanation":"Ship anatomy."},
+    {"level":2,"category":"Pirate gear","members":["EYEPATCH","CUTLASS","COMPASS","SPYGLASS"],"explanation":"Arr."},
+    {"level":3,"category":"Knots","members":["BOWLINE","REEF","GRANNY","SLIP"],"explanation":"Bowline, reef knot, granny knot, slipknot."},
+    {"level":4,"category":"Famous ships","members":["TITANIC","MAYFLOWER","SANTA MARIA","BOUNTY"],"explanation":"Ships from history."}
+  ]},
+  {"id":"conn-031","difficulty":3,"groups":[
+    {"level":1,"category":"In a classroom","members":["DESK","WHITEBOARD","PROJECTOR","STAPLER"],"explanation":"Classroom basics."},
+    {"level":2,"category":"Dances","members":["SALSA","WALTZ","SWING","POLKA"],"explanation":"Tango and foxtrot are dances too, but the alphabet needs them."},
+    {"level":3,"category":"NATO alphabet","members":["ECHO","HOTEL","TANGO","FOXTROT"],"explanation":"E, H, T, and F in the phonetic alphabet."},
+    {"level":4,"category":"Things you can pitch","members":["TENT","IDEA","FIT","BALL"],"explanation":"Pitch a tent, an idea, a fit, a ball."}
+  ]},
+  {"id":"conn-032","difficulty":2,"tags":["south-carolina"],"groups":[
+    {"level":1,"category":"South Carolina cities","members":["CHARLESTON","GREENVILLE","SPARTANBURG","AIKEN"],"explanation":"Columbia is one too, but the shuttles need it."},
+    {"level":2,"category":"South Carolina colleges","members":["CLEMSON","FURMAN","WOFFORD","LANDER"],"explanation":"Lander University is in Greenwood."},
+    {"level":3,"category":"Space shuttles","members":["ATLANTIS","DISCOVERY","CHALLENGER","COLUMBIA"],"explanation":"Orbiters in NASA's shuttle fleet."},
+    {"level":4,"category":"Dances","members":["SHAG","JITTERBUG","TWIST","HUSTLE"],"explanation":"The shag is South Carolina's official state dance."}
+  ]},
+  {"id":"conn-033","difficulty":2,"groups":[
+    {"level":1,"category":"At the beach","members":["SAND","TOWEL","UMBRELLA","SUNSCREEN"],"explanation":"Beach day essentials."},
+    {"level":2,"category":"___flower","members":["SUN","WALL","CAULI","MAY"],"explanation":"Sunflower, wallflower, cauliflower, mayflower."},
+    {"level":3,"category":"Sun___","members":["GLASSES","BURN","DIAL","RISE"],"explanation":"Sunglasses, sunburn, sundial, sunrise."},
+    {"level":4,"category":"Seashells","members":["CONCH","CLAM","OYSTER","SCALLOP"],"explanation":"Shells you might find on the shore."}
+  ]},
+  {"id":"conn-034","difficulty":3,"groups":[
+    {"level":1,"category":"Citrus fruits","members":["LEMON","ORANGE","GRAPEFRUIT","TANGERINE"],"explanation":"Lime is citrus too, but green needs it."},
+    {"level":2,"category":"Green things","members":["LIME","CLOVER","PICKLE","EMERALD"],"explanation":"All green."},
+    {"level":3,"category":"Leap ___","members":["YEAR","DAY","SECOND","FROG"],"explanation":"Leap year, leap day, leap second, leapfrog."},
+    {"level":4,"category":"Units of time","members":["MINUTE","HOUR","DECADE","CENTURY"],"explanation":"Year, day, and second are units too, but the leaps need them."}
+  ]},
+  {"id":"conn-035","difficulty":2,"groups":[
+    {"level":1,"category":"Units of length","members":["INCH","FOOT","YARD","MILE"],"explanation":"U.S. customary lengths."},
+    {"level":2,"category":"Parts of a shoe","members":["SOLE","HEEL","LACE","TONGUE"],"explanation":"Look down."},
+    {"level":3,"category":"Fish","members":["COD","TUNA","HALIBUT","TROUT"],"explanation":"Sole is a fish too, but the shoe needs it."},
+    {"level":4,"category":"___stick","members":["JOY","LIP","CHOP","DRUM"],"explanation":"Joystick, lipstick, chopstick, drumstick."}
+  ]},
+  {"id":"conn-036","difficulty":2,"tags":["arts"],"groups":[
+    {"level":1,"category":"Theater words","members":["STAGE","CURTAIN","SPOTLIGHT","ENCORE"],"explanation":"Showtime."},
+    {"level":2,"category":"Shakespeare tragedies","members":["MACBETH","OTHELLO","KING LEAR","HAMLET"],"explanation":"A hamlet is also a small village."},
+    {"level":3,"category":"Places people live","members":["VILLAGE","TOWN","CITY","METROPOLIS"],"explanation":"From small to huge."},
+    {"level":4,"category":"Things with acts","members":["PLAY","CIRCUS","OPERA","CONGRESS"],"explanation":"Acts of a play, circus acts, acts of an opera, acts of Congress."}
+  ]},
+  {"id":"conn-037","difficulty":2,"tags":["technology"],"groups":[
+    {"level":1,"category":"Computer gear","members":["MOUSE","KEYBOARD","SPEAKER","ROUTER"],"explanation":"Plugged into the desk."},
+    {"level":2,"category":"Social media actions","members":["LIKE","SHARE","FOLLOW","POST"],"explanation":"Tap, tap, tap."},
+    {"level":3,"category":"Rodents","members":["HAMSTER","BEAVER","SQUIRREL","GERBIL"],"explanation":"A mouse is a rodent too, but the computer needs it."},
+    {"level":4,"category":"Lizards","members":["MONITOR","GECKO","IGUANA","CHAMELEON"],"explanation":"A monitor is a big lizard."}
+  ]},
+  {"id":"conn-038","difficulty":1,"groups":[
+    {"level":1,"category":"Give off light","members":["LAMP","CANDLE","LANTERN","FLASHLIGHT"],"explanation":"Light sources."},
+    {"level":2,"category":"___house","members":["GREEN","TREE","DOG","CLUB"],"explanation":"Greenhouse, treehouse, doghouse, clubhouse."},
+    {"level":3,"category":"___ball","members":["SNOW","BASKET","MEAT","EYE"],"explanation":"Snowball, basketball, meatball, eyeball."},
+    {"level":4,"category":"Party supplies","members":["BALLOON","CONFETTI","GIFT","PINATA"],"explanation":"Candles fit a party too, but the light sources need them."}
+  ]},
+  {"id":"conn-039","difficulty":2,"groups":[
+    {"level":1,"category":"Move fast","members":["SPRINT","DASH","RACE","ZOOM"],"explanation":"Go go go."},
+    {"level":2,"category":"Talk","members":["CHAT","GOSSIP","BABBLE","MUMBLE"],"explanation":"Ways of speaking."},
+    {"level":3,"category":"Lightning ___","members":["ROD","BUG","ROUND","BOLT"],"explanation":"Lightning rod, lightning bug, lightning round, lightning bolt."},
+    {"level":4,"category":"Things you catch","members":["COLD","BUS","BREATH","WAVE"],"explanation":"Catch a cold, a bus, your breath, a wave."}
+  ]},
+  {"id":"conn-040","difficulty":2,"tags":["arts"],"groups":[
+    {"level":1,"category":"Impressionist painters","members":["MONET","RENOIR","DEGAS","MANET"],"explanation":"French Impressionists."},
+    {"level":2,"category":"Ninja Turtles","members":["LEONARDO","RAPHAEL","DONATELLO","MICHELANGELO"],"explanation":"Named for Renaissance artists."},
+    {"level":3,"category":"Things with shells","members":["TACO","EGG","SNAIL","PEANUT"],"explanation":"Crunchy outsides."},
+    {"level":4,"category":"Art supplies","members":["EASEL","CANVAS","PALETTE","CHARCOAL"],"explanation":"In the art room."}
+  ]},
+  {"id":"conn-041","difficulty":2,"tags":["sports"],"groups":[
+    {"level":1,"category":"Tennis terms","members":["RACKET","NET","SERVE","LOVE"],"explanation":"Love means zero in tennis, but tennis needs it."},
+    {"level":2,"category":"In a courtroom","members":["JUDGE","JURY","GAVEL","WITNESS"],"explanation":"Order in the court."},
+    {"level":3,"category":"Zero","members":["NIL","ZILCH","NADA","ZIP"],"explanation":"Nothing at all."},
+    {"level":4,"category":"Things you can cast","members":["SPELL","VOTE","SHADOW","DOUBT"],"explanation":"Cast a spell, a vote, a shadow, doubt."}
+  ]},
+  {"id":"conn-042","difficulty":2,"tags":["library"],"groups":[
+    {"level":1,"category":"Parts of a book","members":["SPINE","COVER","CHAPTER","INDEX"],"explanation":"Book anatomy."},
+    {"level":2,"category":"Book genres","members":["MYSTERY","FANTASY","BIOGRAPHY","THRILLER"],"explanation":"Library shelves."},
+    {"level":3,"category":"Covered in spines","members":["CACTUS","PORCUPINE","HEDGEHOG","SEA URCHIN"],"explanation":"Prickly."},
+    {"level":4,"category":"Fingers","members":["RING","MIDDLE","PINKY","THUMB"],"explanation":"Index is a finger too, but the book needs it."}
+  ]},
+  {"id":"conn-043","difficulty":2,"tags":["math"],"groups":[
+    {"level":1,"category":"Shapes","members":["CIRCLE","TRIANGLE","HEXAGON","OVAL"],"explanation":"Square is a shape too, but the town needs it."},
+    {"level":2,"category":"Math results","members":["SUM","PRODUCT","QUOTIENT","DIFFERENCE"],"explanation":"Add, multiply, divide, subtract."},
+    {"level":3,"category":"Town ___","members":["SQUARE","HALL","CRIER","HOUSE"],"explanation":"Town square, town hall, town crier, townhouse."},
+    {"level":4,"category":"___root","members":["CUBE","BEET","GRASS","TAP"],"explanation":"Cube root, beetroot, grassroots, taproot."}
+  ]},
+  {"id":"conn-044","difficulty":1,"tags":["seasonal"],"groups":[
+    {"level":1,"category":"Winter wear","members":["SCARF","MITTENS","BEANIE","PARKA"],"explanation":"Bundle up."},
+    {"level":2,"category":"Ice ___","members":["CREAM","CUBE","SKATE","BERG"],"explanation":"Ice cream, ice cube, ice skate, iceberg."},
+    {"level":3,"category":"Things that melt","members":["BUTTER","CHOCOLATE","CANDLE","SNOWMAN"],"explanation":"Keep them cool."},
+    {"level":4,"category":"Hockey","members":["PUCK","RINK","GOALIE","SLAPSHOT"],"explanation":"Skate fits hockey too, but ice needs it."}
+  ]},
+  {"id":"conn-045","difficulty":3,"tags":["vocabulary"],"groups":[
+    {"level":1,"category":"Ways to say hello","members":["HELLO","HOWDY","HEY","HIYA"],"explanation":"Greetings only."},
+    {"level":2,"category":"Ways to say goodbye","members":["BYE","FAREWELL","ADIOS","ADIEU"],"explanation":"Partings only."},
+    {"level":3,"category":"Mean hello and goodbye","members":["ALOHA","CIAO","SHALOM","SALUT"],"explanation":"Hawaiian, Italian, Hebrew, French."},
+    {"level":4,"category":"Hawaiian words","members":["LUAU","HULA","UKULELE","MAHALO"],"explanation":"Aloha is Hawaiian too, but it means both."}
+  ]}
+]

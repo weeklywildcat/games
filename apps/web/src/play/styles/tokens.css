@@ -1,0 +1,96 @@
+/*
+ * Wildcat Games design tokens.
+ *
+ * Scale: 1rem = 16px on a 1920×1080 board and scales with the smaller of the
+ * two viewport dimensions, so every layout keeps its proportions on other
+ * displays without scrolling.
+ *
+ * Type: Mona Sans (variable width + weight) for everything; the expanded,
+ * black cut is the display voice. Newsreader italic is the editorial aside.
+ *
+ * Color: warm paper and ink, with one saturated color per game.
+ */
+
+:root {
+  /* Surfaces */
+  --paper: #fbf8f3;
+  --paper-2: #f3eee5;
+  --paper-3: #e9e2d6;
+  --card: #ffffff;
+  --ink: #121212;
+  --ink-2: #3b3833;
+  --ink-3: #6b665e;
+  --rule: #e2dbcf;
+  --rule-strong: #121212;
+  --on-color: #ffffff;
+  --wildcat-maroon: #73192a;
+
+  /* Game colors */
+  --word: #2fa35b;
+  --word-deep: #1f7a42;
+  --word-present: #f5b72e;
+  --word-absent: #7c7f86;
+  --connections: #7b5cd6;
+  --connections-deep: #5a3fb3;
+  --conn-1: #f7c948;
+  --conn-2: #6cc48c;
+  --conn-3: #6fa8f0;
+  --conn-4: #c58be8;
+  --trivia: #3d63f0;
+  --trivia-deep: #2443c4;
+  --match: #f2668b;
+  --match-deep: #d0436b;
+  --rush: #ff7a1a;
+  --rush-deep: #e05d00;
+
+  /* Feedback */
+  --good: #2fa35b;
+  --bad: #e5484d;
+  --warn: #f5b72e;
+  --focus: #3d63f0;
+
+  /* Type */
+  --font: "Mona Sans Variable", "Mona Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Newsreader Variable", "Newsreader", Georgia, "Times New Roman", serif;
+  --display-wdth: 125;
+  --display-wght: 900;
+
+  /* Shape (squarish: playful, not bubbly) */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.625rem;
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Elevation: one hard "printed" shadow, one soft lift */
+  --press: 0 0.3rem 0 0 rgb(18 18 18 / 0.9);
+  --press-sm: 0 0.2rem 0 0 rgb(18 18 18 / 0.9);
+  --lift: 0 1.25rem 3rem -1rem rgb(18 18 18 / 0.25);
+
+  /* Spacing */
+  --gap-1: 0.25rem;
+  --gap-2: 0.5rem;
+  --gap-3: 0.75rem;
+  --gap-4: 1rem;
+  --gap-5: 1.5rem;
+  --gap-6: 2rem;
+  --gap-7: 3rem;
+  --gap-8: 4rem;
+
+  /* Touch: comfortable targets on a vertical classroom board */
+  --touch-min: 4.5rem;
+
+  /* Motion (CSS side; Motion springs live in lib/motion.ts) */
+  --t-instant: 80ms;
+  --t-quick: 160ms;
+  --t-base: 280ms;
+  --t-slow: 520ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+html {
+  /* 16px at 1920×1080; scales with the limiting dimension. */
+  font-size: min(calc(100vw / 120), calc(100vh / 67.5));
+}

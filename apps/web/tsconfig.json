@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "paths": { "@admin/*": ["./src/admin/*"], "@play/*": ["./src/play/*"] }
+  },
+  "include": ["src", "vite.config.ts"]
+}

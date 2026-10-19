@@ -1,0 +1,172 @@
+{
+  "_format": "School and local questions. None of these are published by the seed. Local questions arrive in review with suggested sources a staff member must check; school questions are drafts whose answers must come from school records. Mark a question verified in the admin dashboard only after you have checked the source yourself.",
+  "questions": [
+    {
+      "id": "trivia-local-001",
+      "status": "review",
+      "difficulty": 2,
+      "data": {
+        "category": "ninety-six-greenwood",
+        "prompt": "According to the traditional story, how did the town of Ninety Six get its name?",
+        "choices": ["It was about 96 miles from the Cherokee town of Keowee", "It was founded in 1796", "It had 96 original families", "It sat at mile marker 96 on a railroad"],
+        "answerIndex": 0,
+        "explanation": "Traders reckoned the spot was about 96 miles from Keowee, a Cherokee town in the Upstate."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": ["https://www.battlefields.org/learn/battles/revolutionary-war/ninety-six", "https://www.nps.gov/nisi/"],
+        "notes": "Sources describe the distance as an estimate and phrase the reference point slightly differently. Confirm wording against the National Park Service before publishing."
+      }
+    },
+    {
+      "id": "trivia-local-002",
+      "status": "review",
+      "difficulty": 2,
+      "data": {
+        "category": "ninety-six-greenwood",
+        "prompt": "Ninety Six National Historic Site preserves an earthen fort built in what shape?",
+        "choices": ["A square", "A circle", "An eight-pointed star", "A triangle"],
+        "answerIndex": 2,
+        "explanation": "The Star Fort's points let defenders fire in every direction."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": ["https://nps.gov/nisi/learn/historyculture/the-star-fort.htm"],
+        "notes": "NPS page describes the eight-point star. Check the page and mark verified."
+      }
+    },
+    {
+      "id": "trivia-local-003",
+      "status": "review",
+      "difficulty": 3,
+      "data": {
+        "category": "ninety-six-greenwood",
+        "prompt": "In 1781, which Patriot general besieged the Star Fort at Ninety Six?",
+        "choices": ["Francis Marion", "Nathanael Greene", "Thomas Sumter", "Daniel Morgan"],
+        "answerIndex": 1,
+        "explanation": "Greene's siege lasted 28 days, from May 22 to June 18, 1781, but the fort held."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": ["https://en.wikipedia.org/wiki/Siege_of_Ninety_Six", "https://townofninetysix.sc.gov/parks"],
+        "notes": "Prefer an NPS or state archive citation over Wikipedia before publishing."
+      }
+    },
+    {
+      "id": "trivia-local-004",
+      "status": "review",
+      "difficulty": 1,
+      "data": {
+        "category": "ninety-six-greenwood",
+        "prompt": "Which city is the county seat of Greenwood County?",
+        "choices": ["Ninety Six", "Abbeville", "Greenwood", "Hodges"],
+        "answerIndex": 2,
+        "explanation": "Greenwood is the county seat."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": [],
+        "notes": "Add the Greenwood County government website as the source."
+      }
+    },
+    {
+      "id": "trivia-local-005",
+      "status": "review",
+      "difficulty": 2,
+      "data": {
+        "category": "ninety-six-greenwood",
+        "prompt": "Which public university is located in Greenwood?",
+        "choices": ["Furman University", "Lander University", "Wofford College", "Winthrop University"],
+        "answerIndex": 1,
+        "explanation": "Lander University is in Greenwood."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": [],
+        "notes": "Add Lander University's website as the source."
+      }
+    },
+    {
+      "id": "trivia-ww-001",
+      "status": "review",
+      "difficulty": 1,
+      "data": {
+        "category": "weekly-wildcat",
+        "prompt": "What is the name of Ninety Six High School's student newspaper?",
+        "choices": ["The Weekly Wildcat", "The Wildcat Roar", "The Ninety Six Times", "The Paw Print"],
+        "answerIndex": 0,
+        "explanation": "The Weekly Wildcat publishes the stories behind this arcade."
+      },
+      "verification": {
+        "status": "needs_source",
+        "sources": [],
+        "notes": "Confirm none of the distractors is a real past NSHS publication, then cite the masthead."
+      }
+    },
+    {
+      "id": "trivia-nshs-001",
+      "status": "draft",
+      "difficulty": 2,
+      "data": {
+        "category": "nshs-history",
+        "prompt": "In what year did Ninety Six High School open? (DRAFT: needs school records)",
+        "choices": ["Answer needed", "Distractor one", "Distractor two", "Distractor three"],
+        "answerIndex": 0,
+        "explanation": "Add the verified fact here."
+      },
+      "verification": { "status": "unverified", "sources": [], "notes": "Check district records or the school's front office." }
+    },
+    {
+      "id": "trivia-nshs-002",
+      "status": "draft",
+      "difficulty": 1,
+      "data": {
+        "category": "nshs-traditions",
+        "prompt": "What are Ninety Six High School's official school colors? (DRAFT)",
+        "choices": ["Answer needed", "Distractor one", "Distractor two", "Distractor three"],
+        "answerIndex": 0,
+        "explanation": "Add the verified fact here."
+      },
+      "verification": { "status": "unverified", "sources": [], "notes": "Confirm with the athletics department or student handbook." }
+    },
+    {
+      "id": "trivia-nshs-003",
+      "status": "draft",
+      "difficulty": 2,
+      "data": {
+        "category": "nshs-athletics",
+        "prompt": "Which Wildcat team won the school's most recent state championship? (DRAFT)",
+        "choices": ["Answer needed", "Distractor one", "Distractor two", "Distractor three"],
+        "answerIndex": 0,
+        "explanation": "Add the verified fact here."
+      },
+      "verification": { "status": "unverified", "sources": [], "notes": "Use SCHSL records. Rewrite the prompt if it doesn't fit the real history." }
+    },
+    {
+      "id": "trivia-nshs-004",
+      "status": "draft",
+      "difficulty": 2,
+      "data": {
+        "category": "nshs-clubs",
+        "prompt": "Which NSHS club ___? (DRAFT: write from a verified club fact)",
+        "choices": ["Answer needed", "Distractor one", "Distractor two", "Distractor three"],
+        "answerIndex": 0,
+        "explanation": "Add the verified fact here."
+      },
+      "verification": { "status": "unverified", "sources": [], "notes": "Interview the club adviser; cite the interview date." }
+    },
+    {
+      "id": "trivia-nshs-005",
+      "status": "draft",
+      "difficulty": 2,
+      "data": {
+        "category": "nshs-people",
+        "prompt": "Which NSHS teacher ___? (DRAFT: only use facts the teacher has approved)",
+        "choices": ["Answer needed", "Distractor one", "Distractor two", "Distractor three"],
+        "answerIndex": 0,
+        "explanation": "Add the verified fact here."
+      },
+      "verification": { "status": "unverified", "sources": [], "notes": "Get the staff member's permission and keep facts non-sensitive." }
+    }
+  ]
+}
